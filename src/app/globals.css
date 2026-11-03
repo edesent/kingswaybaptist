@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+/*
+ * The palette is the church's own: the orange of the spotlight crown in their
+ * logo, the near-black of the wordmark, and the warm cream their current site
+ * sits on. "Dusk" is the blue-violet of the sky in their sunset photo of the
+ * building, used for the dark bands so the site never goes cold grey.
+ */
+@theme {
+  --color-orange: #e85a22;
+  --color-orange-deep: #c2420f;
+  --color-orange-soft: #f6a37a;
+  --color-orange-glow: #ffd3b8;
+  --color-ink: #1c1917;
+  --color-ink-soft: #3d3732;
+  --color-muted: #6b625a;
+  --color-paper: #fbf7f0;
+  --color-cream: #f5efe4;
+  --color-sand: #ebe2d2;
+  --color-line: #d9cdb9;
+  --color-dusk-950: #0b1623;
+  --color-dusk-900: #10233a;
+  --color-dusk-800: #182f4c;
+  --color-dusk-700: #24405f;
+  --color-dusk-300: #8fa7c4;
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: var(--font-poppins), Poppins, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-orange-glow);
+    color: var(--color-ink);
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Letterspaced caps for labels, set in the sans like "BAPTIST CHURCH" under the wordmark. */
+  .caps {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-weight: 600;
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
+  /* Headlines in the Garamond of the wordmark, set big and tight. */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 0.96;
+    letter-spacing: -0.015em;
+  }
+  .display-light {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+  }
+  /* Scripture gets its own voice: the Garamond italic. */
+  .verse {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .lede {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  /* Type over a photograph always gets a shadow. */
+  .on-photo {
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.35);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1rem 1.75rem;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.74rem;
+    font-weight: 700;
+    border: 1.5px solid transparent;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  .btn-orange {
+    background: var(--color-orange);
+    color: #fff;
+    box-shadow: 0 12px 30px -14px rgba(232, 90, 34, 0.9);
+  }
+  .btn-orange:hover {
+    background: var(--color-orange-deep);
+  }
+  .btn-ink {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  .btn-ink:hover {
+    background: #000;
+  }
+  .btn-line {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #fff;
+  }
+  .btn-line:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+  }
+  .btn-line-ink {
+    border-color: var(--color-ink);
+    color: var(--color-ink);
+  }
+  .btn-line-ink:hover {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  /* The highway centerline: a dashed orange rule used between sections. */
+  .road {
+    height: 3px;
+    background-image: linear-gradient(90deg, var(--color-orange) 0 60%, transparent 60% 100%);
+    background-size: 44px 3px;
+    background-repeat: repeat-x;
+  }
+  .road-light {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0 60%, transparent 60% 100%);
+    background-size: 44px 3px;
+    background-repeat: repeat-x;
+  }
+  .label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+  }
+  .field {
+    width: 100%;
+    background: #fff;
+    border: 1.5px solid var(--color-line);
+    padding: 0.85rem 1rem;
+    font: inherit;
+    color: var(--color-ink);
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .field:focus {
+    border-color: var(--color-orange);
+    box-shadow: 0 0 0 3px rgba(232, 90, 34, 0.18);
+  }
+  .prose-church p + p {
+    margin-top: 1.1em;
+  }
+  .prose-church strong {
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+  /* The ring around the hero's "scroll" hint and the stream dot. */
+  .live-dot {
+    position: relative;
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 999px;
+    background: var(--color-orange);
+  }
+  .live-dot::after {
+    content: "";
+    position: absolute;
+    inset: -0.3rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--color-orange);
+    opacity: 0.6;
+    animation: ring 2.2s ease-out infinite;
+  }
+  @keyframes ring {
+    0% {
+      transform: scale(0.6);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.6);
+      opacity: 0;
+    }
+  }
+}
+
+/* Scroll-in reveal. Content is visible without JavaScript. */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.js [data-reveal][data-in] {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .live-dot::after {
+    animation: none;
+  }
+}
