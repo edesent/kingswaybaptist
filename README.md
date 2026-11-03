@@ -69,3 +69,7 @@ answer honestly that the form isn't connected yet and ask people to call.
   photos on Facebook were left off on purpose.
 - **Phil Wood** is listed on the old site as "Deacon, Bible Teacher, Preacher" and streams as "Pastor Phil"
   on YouTube. The site uses the old site's wording.
+
+## Hosting
+
+Vercel project `kingswaybaptist` (team elijah-desents-projects), connected to this GitHub repo. Every push to `main` deploys.
