@@ -42,8 +42,8 @@ export default function Home() {
           alt="Kingsway Baptist Church, a brick building with a white steeple on the Kings Highway, under a pink and orange sunset"
         />
         {/* Wash the copy side and the bottom so the headline reads over the footage. */}
-        <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/85 via-dusk-950/45 to-dusk-950/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-dusk-950/90 via-dusk-950/25 to-dusk-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/60 via-dusk-950/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dusk-950/80 via-dusk-950/10 to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-4 pb-10 pt-40 sm:px-6 lg:px-8 lg:pb-16">
           <p className="caps on-photo text-orange-soft">
             An independent Baptist church · Mickleton, New Jersey
@@ -167,8 +167,8 @@ export default function Home() {
       {/* ------------------------------------------------------------ pastor */}
       <section className="relative isolate overflow-hidden bg-ink text-cream">
         {/* the family photo fills the right half of the band and fades into the dark on the left */}
-        <div className="relative aspect-[4/3] sm:aspect-[16/9] lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[56%]">
-          <Image src={pastor.photo} alt={pastor.photoAlt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-[42%_15%]" />
+        <div className="relative aspect-[16/10] lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[56%]">
+          <Image src="/photos/pastor-ryman-preaching.jpg" alt="Pastor Samson Ryman at the pulpit at Kingsway, smiling, microphone in hand" fill sizes="(min-width: 1024px) 56vw, 100vw" className="object-cover object-[50%_30%]" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent lg:bg-gradient-to-r lg:from-ink lg:via-ink/30 lg:via-30% lg:to-transparent" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
