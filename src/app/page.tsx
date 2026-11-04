@@ -192,6 +192,7 @@ export default function Home() {
               title="Pastor Ryman preaching at Kingsway"
               caption="Pastor Ryman preaching on a Sunday at Kingsway. Tap the speaker to hear him."
               vertical={false}
+              aspect="aspect-[4/3]"
               className="text-cream [&_figcaption]:text-cream/60"
             />
           </div>
@@ -269,9 +270,9 @@ export default function Home() {
       <section className="bg-cream">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:grid lg:grid-cols-12 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           <div className="lg:col-span-5" data-reveal>
-            <p className="caps flex items-center gap-3 text-orange">
+            <Link href="/watch" className="caps flex items-center gap-3 text-orange underline-offset-4 hover:underline">
               <span className="live-dot" aria-hidden /> Streamed every Sunday
-            </p>
+            </Link>
             <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)] text-ink">Bad weather? Out of town? Too sick to come?</h2>
             <p className="lede mt-5 max-w-xl text-ink-soft">
               Jump on our live stream and be part of the service from wherever you are. Both Sunday services go out on YouTube, morning around 11:30 and evening around 6:30, and every one stays up afterward.

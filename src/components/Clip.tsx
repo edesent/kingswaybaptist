@@ -14,6 +14,7 @@ export default function Clip({
   title,
   caption,
   vertical = true,
+  aspect,
   className = "",
 }: {
   src: string;
@@ -21,6 +22,8 @@ export default function Clip({
   title: string;
   caption?: string;
   vertical?: boolean;
+  /** Tailwind aspect class to use instead of the vertical/landscape default, e.g. "aspect-[4/3]". */
+  aspect?: string;
   className?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
@@ -61,7 +64,7 @@ export default function Clip({
 
   return (
     <figure className={`group relative ${className}`}>
-      <div className={`relative overflow-hidden bg-dusk-900 ${vertical ? "aspect-[9/16]" : "aspect-video"}`}>
+      <div className={`relative overflow-hidden bg-dusk-900 ${aspect ?? (vertical ? "aspect-[9/16]" : "aspect-video")}`}>
         {still ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={poster} alt={title} className="absolute inset-0 h-full w-full object-cover" />
