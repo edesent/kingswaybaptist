@@ -71,7 +71,7 @@ export default function Clip({
             src={src}
             poster={poster}
             loop
-            preload="metadata"
+            preload="none"
             onError={() => setStill(true)}
             className="absolute inset-0 h-full w-full object-cover"
             aria-label={title}

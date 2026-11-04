@@ -4,15 +4,17 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 /**
- * The home-page hero: Pastor Ryman preaching, from the church's own service
- * recording, playing silently behind the headline. A still from the clip shows
+ * The home-page hero: the church's drone flyover of the building and grounds,
+ * playing silently behind the headline. A still from the clip shows
  * first and stays for anyone with reduced motion on, on a failed load, or while
  * the video buffers; the clip fades in over it once it plays.
  */
-export default function HeroVideo({ src, poster, alt }: { src: string; poster: string; alt: string }) {
+export default function HeroVideo({ src, srcSmall, poster, alt }: { src: string; srcSmall?: string; poster: string; alt: string }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [still, setStill] = useState(false);
   const [ready, setReady] = useState(false);
+  // Phones get the smaller file; chosen on the client so the server render stays static.
+  const [file, setFile] = useState<string | null>(null);
 
   useEffect(() => {
     const v = ref.current;
@@ -21,6 +23,7 @@ export default function HeroVideo({ src, poster, alt }: { src: string; poster: s
       setStill(true);
       return;
     }
+    setFile(srcSmall && window.innerWidth < 768 ? srcSmall : src);
     v.muted = true;
     v.playsInline = true;
     v.loop = true;
@@ -30,24 +33,24 @@ export default function HeroVideo({ src, poster, alt }: { src: string; poster: s
     v.addEventListener("playing", show);
     v.play().catch(() => {});
     return () => v.removeEventListener("playing", show);
-  }, []);
+  }, [src, srcSmall]);
 
   return (
     <>
-      <Image src={poster} alt={alt} fill priority sizes="100vw" className="object-cover object-[45%_40%]" />
+      <Image src={poster} alt={alt} fill priority sizes="100vw" className="object-cover object-[40%_center]" />
       {!still && (
         <video
           ref={ref}
-          src={src}
+          src={file ?? undefined}
           muted
           loop
           playsInline
           autoPlay
-          preload="auto"
+          preload="metadata"
           aria-hidden
           onCanPlay={() => setReady(true)}
           onError={() => setStill(true)}
-          className={`absolute inset-0 h-full w-full object-cover object-[45%_40%] transition-opacity duration-[1500ms] ${ready ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 h-full w-full object-cover object-[40%_center] transition-opacity duration-[1500ms] ${ready ? "opacity-100" : "opacity-0"}`}
         />
       )}
     </>

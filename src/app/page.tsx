@@ -37,9 +37,10 @@ export default function Home() {
       {/* ---------------------------------------------------------------- hero */}
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-dusk-900 text-white">
         <HeroVideo
-          src="/video/hero-pastor.mp4"
-          poster="/posters/hero-pastor-poster.jpg"
-          alt="Pastor Samson Ryman preaching from the platform at Kingsway Baptist Church"
+          src="/video/hero-drone.mp4"
+          srcSmall="/video/hero-drone-sm.mp4"
+          poster="/posters/hero-drone-poster.jpg"
+          alt="Kingsway Baptist Church from the air: the brick building, white steeple and flag on six acres along the Kings Highway"
         />
         {/* Wash the copy side and the bottom so the headline reads over the footage. */}
         <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/60 via-dusk-950/25 to-transparent" />
@@ -165,14 +166,9 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------ pastor */}
-      <section className="relative isolate overflow-hidden bg-ink text-cream">
-        {/* the family photo fills the right half of the band and fades into the dark on the left */}
-        <div className="relative aspect-[16/10] lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[56%]">
-          <Image src="/photos/pastor-ryman-preaching.jpg" alt="Pastor Samson Ryman at the pulpit at Kingsway, smiling, microphone in hand" fill sizes="(min-width: 1024px) 56vw, 100vw" className="object-cover object-[50%_30%]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent lg:bg-gradient-to-r lg:from-ink lg:via-ink/30 lg:via-30% lg:to-transparent" />
-        </div>
-        <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-          <div className="lg:w-[46%] lg:pr-8" data-reveal>
+      <section className="bg-ink text-cream">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:grid lg:grid-cols-12 lg:items-center lg:gap-12 lg:px-8 lg:py-24">
+          <div className="lg:col-span-5" data-reveal>
             <p className="caps text-orange-soft">Our pastor</p>
             <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)]">Pastor Samson Ryman</h2>
             <p className="lede mt-6 max-w-2xl text-cream/85">
@@ -188,6 +184,16 @@ export default function Home() {
             <Link href="/about#leadership" className="btn btn-orange mt-8">
               Meet our leadership
             </Link>
+          </div>
+          <div className="mt-12 lg:col-span-7 lg:mt-0" data-reveal="1">
+            <Clip
+              src="/video/pastor-preaching.mp4"
+              poster="/posters/pastor-preaching-poster.jpg"
+              title="Pastor Ryman preaching at Kingsway"
+              caption="Pastor Ryman preaching on a Sunday at Kingsway. Tap the speaker to hear him."
+              vertical={false}
+              className="text-cream [&_figcaption]:text-cream/60"
+            />
           </div>
         </div>
       </section>
