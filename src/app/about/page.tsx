@@ -99,10 +99,10 @@ export default function About() {
           </p>
           <div className="mt-6 lg:grid lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-5" data-reveal>
-              <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-                <Image src={pastor.photo} alt={pastor.photoAlt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-top" />
+              <div className="relative aspect-[4/3] overflow-hidden bg-sand">
+                <Image src={pastor.photo} alt={pastor.photoAlt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-[50%_30%]" />
               </div>
-              <p className="mt-3 text-sm text-muted">Pastor and Mrs. Ryman with Israel, Isabel, Juliet and Grace.</p>
+              <p className="mt-3 text-sm text-muted">Pastor Ryman on a Sunday morning at Kingsway.</p>
             </div>
             <div className="prose-church mt-10 lg:col-span-7 lg:mt-0" data-reveal="1">
               <h2 className="display text-[clamp(2.4rem,5vw,4.4rem)] text-ink">{pastor.name}</h2>

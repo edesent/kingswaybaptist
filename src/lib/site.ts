@@ -78,8 +78,8 @@ export const pastor = {
   children: ["Israel", "Isabel", "Juliet", "Grace"],
   since: "January 12, 2025",
   lifeVerse: "II Timothy 2:2-4",
-  photo: "/photos/ryman-family.jpg",
-  photoAlt: "Pastor Samson and Linnet Ryman with their four grown children on the platform at Kingsway",
+  photo: "/photos/pastor-ryman-preaching.jpg",
+  photoAlt: "Pastor Samson Ryman at the pulpit at Kingsway, smiling, microphone in hand",
 };
 
 export const leaders: { name: string; role: string }[] = [

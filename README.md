@@ -78,8 +78,8 @@ Vercel project `kingswaybaptist` (team elijah-desents-projects), connected to th
 
 The DSLR photos from kbc4u.org were taken before Pastor Ryman came (January 2025), so the men preaching
 in `preaching-*.jpg` are earlier preachers, not him. Don't caption them as the pastor. The only photos of
-Pastor Ryman are `ryman-family.jpg` (from the old site) and `pastor-ryman-preaching.jpg`, a 1280px frame
-of a 2026 Sunday stream pulled from YouTube's own thumbnails (i.ytimg.com `maxres1/2/3.jpg`). `pastor-preaching.mp4`
+Pastor Ryman are `pastor-ryman-preaching.jpg` and `pastor-ryman-israel.jpg`, 1280px frames
+of 2026 Sunday streams (the family photo from the old site was removed at Eli's request) pulled from YouTube's own thumbnails (i.ytimg.com `maxres1/2/3.jpg`). `pastor-preaching.mp4`
 (1280×720 with sound, 27 s, in the pastor band) is a web-sized copy of a 2560×1440 recording of Pastor Ryman
 preaching that Eli supplied on 2026-11-04 (`pastor-sampson.mov`). The hero clip `hero-drone.mp4` is the first
 30 s of the church's own drone flyover (YouTube fTDNfD4HOV8, 4K source), silent.
