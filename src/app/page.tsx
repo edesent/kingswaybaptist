@@ -37,9 +37,9 @@ export default function Home() {
       {/* ---------------------------------------------------------------- hero */}
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-dusk-900 text-white">
         <HeroVideo
-          src="/video/hero-singing.mp4"
-          poster="/photos/sunset.jpg"
-          alt="Kingsway Baptist Church, a brick building with a white steeple on the Kings Highway, under a pink and orange sunset"
+          src="/video/hero-pastor.mp4"
+          poster="/posters/hero-pastor-poster.jpg"
+          alt="Pastor Samson Ryman preaching from the platform at Kingsway Baptist Church"
         />
         {/* Wash the copy side and the bottom so the headline reads over the footage. */}
         <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/60 via-dusk-950/25 to-transparent" />

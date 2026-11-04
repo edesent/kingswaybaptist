@@ -79,7 +79,7 @@ Vercel project `kingswaybaptist` (team elijah-desents-projects), connected to th
 The DSLR photos from kbc4u.org were taken before Pastor Ryman came (January 2025), so the men preaching
 in `preaching-*.jpg` are earlier preachers, not him. Don't caption them as the pastor. The only photos of
 Pastor Ryman are `ryman-family.jpg` (from the old site) and `pastor-ryman-preaching.jpg`, a 1280px frame
-of a 2026 Sunday stream pulled from YouTube's own thumbnails (i.ytimg.com `maxres1/2/3.jpg`). YouTube
-blocks downloading the streams themselves from this machine, so there is no preaching footage in
-`public/video/`; the hero clip (`hero-singing.mp4`) is cut from the church's Christmas-program reel on
-Facebook. If the church sends a service recording, cut ~10 s of the sermon into the hero.
+of a 2026 Sunday stream pulled from YouTube's own thumbnails (i.ytimg.com `maxres1/2/3.jpg`). The hero clip
+(`hero-pastor.mp4`, 1280×720, silent, 27 s) is a web-sized copy of a 2560×1440 recording of Pastor Ryman
+preaching that Eli supplied on 2026-11-04 (`pastor-sampson.mov`); re-encode from that source if a different cut
+is wanted.

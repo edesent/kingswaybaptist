@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 /**
- * The home-page hero: the church's own footage of a Sunday, playing silently
- * behind the headline. The sunset photo of the building shows first and stays
- * for anyone with reduced motion on, on a failed load, or while the video
- * buffers; the clip fades in over it once it can play.
+ * The home-page hero: Pastor Ryman preaching, from the church's own service
+ * recording, playing silently behind the headline. A still from the clip shows
+ * first and stays for anyone with reduced motion on, on a failed load, or while
+ * the video buffers; the clip fades in over it once it plays.
  */
 export default function HeroVideo({ src, poster, alt }: { src: string; poster: string; alt: string }) {
   const ref = useRef<HTMLVideoElement>(null);
@@ -34,7 +34,7 @@ export default function HeroVideo({ src, poster, alt }: { src: string; poster: s
 
   return (
     <>
-      <Image src={poster} alt={alt} fill priority sizes="100vw" className="object-cover object-[62%_center]" />
+      <Image src={poster} alt={alt} fill priority sizes="100vw" className="object-cover object-[45%_40%]" />
       {!still && (
         <video
           ref={ref}
@@ -47,7 +47,7 @@ export default function HeroVideo({ src, poster, alt }: { src: string; poster: s
           aria-hidden
           onCanPlay={() => setReady(true)}
           onError={() => setStill(true)}
-          className={`absolute inset-0 h-full w-full object-cover object-[55%_30%] transition-opacity duration-[1500ms] ${ready ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 h-full w-full object-cover object-[45%_40%] transition-opacity duration-[1500ms] ${ready ? "opacity-100" : "opacity-0"}`}
         />
       )}
     </>
