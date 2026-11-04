@@ -14,7 +14,7 @@ export default function Give() {
       <PlainHead kicker="Giving" title="Thank you for giving." intro="God provides for the ministry of our church through your tithes and offerings, and He uses your giving to missionaries to help spread the Gospel around the world." />
 
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 lg:pt-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
           <div className="lg:col-span-7" data-reveal>
             <p className="lede text-ink">
               It’s more than keeping the lights on and the gears turning. It’s about personal worship to God and handing Him back what He already owns, and it’s about lives being changed through the transformative power of Jesus Christ in our region and beyond.

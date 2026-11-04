@@ -50,7 +50,7 @@ export default function Events() {
       <PlainHead kicker="Events" title="What’s happening at Kingsway." intro="Sunday is the main event. Here is the weekly rhythm, anything special coming up, and the things we do together every year." />
 
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 lg:pt-20 sm:px-6 lg:px-8">
           {events.length > 0 ? (
             <div className="grid gap-6 md:grid-cols-2">
               {events.map((e, i) => {

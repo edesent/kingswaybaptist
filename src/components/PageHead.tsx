@@ -41,7 +41,7 @@ export default function PageHead({
 /** A plain cream masthead for pages that are mostly reading. */
 export function PlainHead({ kicker, title, intro }: { kicker: string; title: string; intro?: string }) {
   return (
-    <section className="relative overflow-hidden bg-cream pb-20 pt-44 sm:pt-48 lg:pb-24 lg:pt-60">
+    <section className="relative overflow-hidden bg-cream pb-16 pt-40 sm:pt-44 lg:pb-20 lg:pt-52">
       <Beams className="pointer-events-none absolute -top-10 right-[2%] h-[150%] w-auto opacity-[0.16]" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="caps text-orange">{kicker}</p>

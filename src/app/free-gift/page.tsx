@@ -42,7 +42,7 @@ export default function FreeGift() {
       <PlainHead kicker="Free gift" title="Did you know that there is a penalty for sin?" intro="That’s right. Just as man demands punishment for crime, God demands a punishment for sin." />
 
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 lg:pt-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
           <div className="lg:col-span-7" data-reveal>
             <p className="verse text-2xl text-ink sm:text-3xl">
               “For the wages of sin is death…” <span className="caps !text-[0.62rem] text-orange">Romans 6:23</span>

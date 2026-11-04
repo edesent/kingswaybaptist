@@ -106,7 +106,7 @@ export default function Beliefs() {
       />
 
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-10 pt-14 lg:pt-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
           <div className="lg:col-span-5" data-reveal>
             <p className="caps text-orange">Core values</p>
             <p className="lede mt-4 text-ink">

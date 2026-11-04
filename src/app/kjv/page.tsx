@@ -18,7 +18,7 @@ export default function KJV() {
         intro="A seven-part series from our pastor on why the King James Bible is the only version accepted and used in the ministries of this church."
       />
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 lg:pt-20 sm:px-6 lg:px-8">
           <p className="verse max-w-3xl text-2xl text-ink sm:text-3xl" data-reveal>
             “The words of the LORD are pure words: as silver tried in a furnace of earth, purified seven times. Thou shalt keep them, O LORD, thou shalt preserve them from this generation for ever.”
           </p>

@@ -16,7 +16,7 @@ export default function Contact() {
       <PlainHead kicker="Contact" title="We look forward to hearing from you." intro="If you have a question, please feel free to contact us. You may call in, send a note, or leave a prayer request." />
 
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 lg:pt-20 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-16 lg:px-8">
           <div className="lg:col-span-7">
             <div className="border border-line bg-white p-7 sm:p-9" data-reveal>
               <p className="caps text-orange">Send a message</p>
