@@ -92,7 +92,7 @@ export default function NewHere() {
                 t: "Straight, practical preaching",
                 b: "Sound biblical preaching from the King James Bible, with practical application to your daily life. Bring your Bible, or use one from the pew.",
                 src: "/photos/preaching-pulpit.jpg",
-                alt: "A preacher at the pulpit with his Bible open",
+                alt: "Preaching from the pulpit at Kingsway, Bible open",
               },
               {
                 t: "A nursery and a discipleship program",

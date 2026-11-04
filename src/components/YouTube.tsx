@@ -14,7 +14,7 @@ export default function YouTube({ id, title, className = "", big = false }: { id
       <div className={`relative aspect-video overflow-hidden bg-black ${className}`}>
         <iframe
           className="absolute inset-0 h-full w-full"
-          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}
+          src={`https://www.youtube.com/embed/${id}?autoplay=1&rel=0`}
           title={title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

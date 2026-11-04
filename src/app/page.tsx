@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Clip from "@/components/Clip";
+import HeroVideo from "@/components/HeroVideo";
 import Crown, { Beams } from "@/components/Crown";
 import YouTube from "@/components/YouTube";
 import { dateParts, longDate, upcomingEvents } from "@/lib/dates";
@@ -35,17 +36,14 @@ export default function Home() {
     <>
       {/* ---------------------------------------------------------------- hero */}
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-dusk-900 text-white">
-        <Image
-          src="/photos/sunset.jpg"
+        <HeroVideo
+          src="/video/hero-singing.mp4"
+          poster="/photos/sunset.jpg"
           alt="Kingsway Baptist Church, a brick building with a white steeple on the Kings Highway, under a pink and orange sunset"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[62%_center]"
         />
-        {/* Wash the copy side and fall away fast; the sky stays bright. */}
-        <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/85 via-dusk-950/35 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-dusk-950/90 via-dusk-950/20 to-transparent" />
+        {/* Wash the copy side and the bottom so the headline reads over the footage. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/85 via-dusk-950/45 to-dusk-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dusk-950/90 via-dusk-950/25 to-dusk-950/10" />
         <div className="relative mx-auto w-full max-w-7xl px-4 pb-10 pt-40 sm:px-6 lg:px-8 lg:pb-16">
           <p className="caps on-photo text-orange-soft">
             An independent Baptist church · Mickleton, New Jersey
@@ -167,9 +165,14 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------ pastor */}
-      <section className="bg-ink text-cream">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:grid lg:grid-cols-12 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
-          <div className="lg:col-span-7" data-reveal>
+      <section className="relative isolate overflow-hidden bg-ink text-cream">
+        {/* the family photo fills the right half of the band and fades into the dark on the left */}
+        <div className="relative aspect-[4/3] sm:aspect-[16/9] lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[56%]">
+          <Image src={pastor.photo} alt={pastor.photoAlt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-[42%_15%]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent lg:bg-gradient-to-r lg:from-ink lg:via-ink/30 lg:via-30% lg:to-transparent" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+          <div className="lg:w-[46%] lg:pr-8" data-reveal>
             <p className="caps text-orange-soft">Our pastor</p>
             <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)]">Pastor Samson Ryman</h2>
             <p className="lede mt-6 max-w-2xl text-cream/85">
@@ -185,11 +188,6 @@ export default function Home() {
             <Link href="/about#leadership" className="btn btn-orange mt-8">
               Meet our leadership
             </Link>
-          </div>
-          <div className="mt-12 lg:col-span-5 lg:mt-0" data-reveal="1">
-            <div className="relative aspect-[4/5] overflow-hidden bg-dusk-900">
-              <Image src={pastor.photo} alt={pastor.photoAlt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-top" />
-            </div>
           </div>
         </div>
       </section>
@@ -322,6 +320,8 @@ export default function Home() {
       <section className="relative isolate flex min-h-[70vh] items-center overflow-hidden bg-dusk-900 text-white">
         <Image src="/photos/exterior-day.jpg" alt="The front of Kingsway Baptist Church on a sunny day, the orange crown logo on the brick wall" fill sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-dusk-950/85 via-dusk-950/40 to-transparent" />
+        {/* fades the photo into the footer below */}
+        <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-b from-transparent to-dusk-950" />
         <div className="relative mx-auto w-full max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <p className="caps on-photo text-orange-soft">744 Kings Highway · Mickleton, NJ 08056</p>
           <h2 className="display on-photo mt-3 max-w-3xl text-[clamp(2.6rem,6vw,5.4rem)]">We would be delighted to have you join us.</h2>

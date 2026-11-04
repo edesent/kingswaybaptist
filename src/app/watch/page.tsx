@@ -19,9 +19,9 @@ export default function Watch() {
         kicker="Watch"
         title="Every service, live and after."
         intro="Kingsway streams to YouTube every Sunday morning and evening at approximately 11:30 AM and 6:30 PM. Catch up on anything you missed, or share a message with family and friends."
-        photo="/photos/preaching-young.jpg"
-        alt="A preacher at the pulpit at Kingsway, arms open, mid-sentence"
-        position="center 25%"
+        photo="/photos/pastor-ryman-preaching.jpg"
+        alt="Pastor Samson Ryman preaching at the pulpit at Kingsway"
+        position="center 30%"
       >
         <div className="mt-8 flex flex-wrap gap-3">
           <a href={`${church.youtube}/live`} target="_blank" rel="noopener" className="btn btn-orange">
