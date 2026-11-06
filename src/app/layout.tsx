@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
-import { church, isDemo, siteUrl } from "@/lib/site";
+import { church, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 // Dated things (events that expire) switch over on their own; re-render hourly.
@@ -53,7 +53,6 @@ export const metadata: Metadata = {
     images: [{ url: "/og.png", width: 1200, height: 630, alt: `${church.name} on the Kings Highway in Mickleton, New Jersey` }],
   },
   twitter: { card: "summary_large_image", images: ["/og.png"] },
-  robots: isDemo ? { index: false, follow: false } : undefined,
 };
 
 export const viewport: Viewport = {
@@ -90,8 +89,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <Reveal />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        {/* Demo tracking (CRM → Demo Tracking). Remove at go-live. */}
-        <script async src="https://www.elijahdesent.com/demo.js" />
       </body>
     </html>
   );

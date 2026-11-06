@@ -45,10 +45,12 @@ answer honestly that the form isn't connected yet and ask people to call.
 
 ## Going live
 
-1. Set `NEXT_PUBLIC_SITE_URL=https://kbc4u.org` (or www) in Vercel. That turns off the demo's
-   `noindex` and fixes every canonical URL in one move.
-2. Delete the two demo-tracking lines at the bottom of `src/app/layout.tsx` (the comment and the
-   `elijahdesent.com/demo.js` script).
+1. Done 2026-11-06: canonical URLs default to `https://kbc4u.org`, every other host gets
+   `X-Robots-Tag: noindex` from `next.config.ts`, and the demo-tracking script is gone.
+2. DNS lives in Route 53 (AWS profile `greengreen`, zone `Z011148725RHWPTP6728Z`): Vercel A/CNAME for
+   the site, Google Workspace MX + SPF for church email. kbc4u.org and www.kbc4u.org (redirects to the
+   apex) are on the Vercel project. The registrar's nameservers switch to that zone once the transfer
+   from Name.com completes.
 3. Old kbc4u.org addresses (`/our-history`, `/our-leadership`, `/what-we-believe`, `/what-we-believe/kjv`,
    `/sermons`, `/giving`, `/contact-us`, `/news/*`) already redirect in `next.config.ts`. `/new-here` and
    `/free-gift` kept their addresses.

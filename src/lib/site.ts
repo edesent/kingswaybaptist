@@ -9,13 +9,12 @@
  * "Confirm with the church" in README.md.
  */
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kingswaybaptist.elijahdesent.com";
-
 /**
- * Preview hosts stay out of search. Once NEXT_PUBLIC_SITE_URL is set to
- * kbc4u.org this turns off by itself.
+ * The church's own address. Every other host (the elijahdesent.com preview,
+ * *.vercel.app) is kept out of search by the X-Robots-Tag rule in
+ * next.config.ts, so nothing here has to change when DNS moves.
  */
-export const isDemo = /(\.dfd\.llc|\.vercel\.app|\.elijahdesent\.com)$/.test(new URL(siteUrl).hostname);
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kbc4u.org";
 
 /** Mickleton, New Jersey keeps Eastern time. Every "today" is worked out here. */
 export const TZ = "America/New_York";

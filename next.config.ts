@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
     // YouTube thumbnails for the stream list and the click-to-play embeds.
     remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com" }],
   },
+  async headers() {
+    // Only kbc4u.org is indexed. The elijahdesent.com preview and *.vercel.app
+    // URLs serve the same pages, so they must never compete with it in search.
+    return [
+      {
+        source: "/:path*",
+        missing: [{ type: "host", value: "(www\\.)?kbc4u\\.org" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ];
+  },
   async redirects() {
     // The old kbc4u.org addresses, so bookmarks and Google results keep working.
     return [
