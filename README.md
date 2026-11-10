@@ -51,9 +51,12 @@ answer honestly that the form isn't connected yet and ask people to call.
    the site, Google Workspace MX + SPF for church email. kbc4u.org and www.kbc4u.org (redirects to the
    apex) are on the Vercel project. The registrar's nameservers switch to that zone once the transfer
    from Name.com completes.
-3. Old kbc4u.org addresses (`/our-history`, `/our-leadership`, `/what-we-believe`, `/what-we-believe/kjv`,
-   `/sermons`, `/giving`, `/contact-us`, `/news/*`) already redirect in `next.config.ts`. `/new-here` and
-   `/free-gift` kept their addresses.
+3. Every old kbc4u.org address redirects with a single 301 in `next.config.ts`: the 2019-2025 Ministry
+   Designs pages, all ~270 `/news/*` sermon and podcast posts, and the 2018, 2014 WordPress and 2011 .php
+   sites, with and without a trailing slash (770 archived addresses tested from the Wayback Machine index on
+   2026-11-10). `/new-here`, `/free-gift`, `/events` and `/give` kept their addresses. Next's own trailing-slash
+   308 is turned off (`skipTrailingSlashRedirect`) so the last rule strips slashes with a 301 instead. Only
+   WordPress system files (`/wp-json`, `/xmlrpc.php`) return 404, on purpose.
 4. Set `FORM_WEBHOOK_URL` so the forms deliver.
 
 ## Confirm with the church
