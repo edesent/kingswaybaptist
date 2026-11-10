@@ -3,7 +3,8 @@
 Website for Kingsway Baptist Church, 744 Kings Highway, Mickleton, NJ 08056 (Pastor Samson Ryman).
 It is a redesign of the Ministry Designs site at kbc4u.org.
 
-- Demo: https://kingswaybaptist.elijahdesent.com
+- Live: https://kbc4u.org (since 2026-11-10)
+- Preview: https://kingswaybaptist.elijahdesent.com (noindexed)
 - Deploys: Vercel, automatically on every push to `main`.
 
 ## Before editing (for any AI assistant or developer)
@@ -49,8 +50,8 @@ answer honestly that the form isn't connected yet and ask people to call.
    `X-Robots-Tag: noindex` from `next.config.ts`, and the demo-tracking script is gone.
 2. DNS lives in Route 53 (AWS profile `greengreen`, zone `Z011148725RHWPTP6728Z`): Vercel A/CNAME for
    the site, Google Workspace MX + SPF for church email. kbc4u.org and www.kbc4u.org (redirects to the
-   apex) are on the Vercel project. The registrar's nameservers switch to that zone once the transfer
-   from Name.com completes.
+   apex, 301) are on the Vercel project. LIVE 2026-11-10: the domain is registered at Amazon Route 53
+   (auto-renew, WHOIS privacy and transfer lock on) and its nameservers point at that zone.
 3. Every old kbc4u.org address redirects with a single 301 in `next.config.ts`: the 2019-2025 Ministry
    Designs pages, all ~270 `/news/*` sermon and podcast posts, and the 2018, 2014 WordPress and 2011 .php
    sites, with and without a trailing slash (770 archived addresses tested from the Wayback Machine index on
