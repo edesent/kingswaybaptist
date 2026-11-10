@@ -66,7 +66,7 @@ export default function About() {
               <p className="caps text-orange-soft">Our building</p>
               <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)]">Six acres, a white steeple, and room for the whole family.</h2>
               <p className="mt-5 max-w-xl text-white/80">
-                You’ll find us on the Kings Highway in Mickleton, in East Greenwich Township. Red brick, a white steeple, a sanctuary with white pews and brass chandeliers, a fellowship hall, and a back field big enough for games and a tent dinner.
+                You’ll find us on the Kings Highway in Mickleton, in East Greenwich Township. Red brick, a white steeple, a sanctuary with white pews and brass chandeliers, a fellowship hall, and a back field big enough for games and a dinner on the grounds.
               </p>
               <a href={church.mapsUrl} target="_blank" rel="noopener" className="btn btn-line mt-8">
                 Directions

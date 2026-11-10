@@ -67,7 +67,7 @@ export const schedule: { day: string; name: string; time: string; note?: string 
   { day: "Wednesday", name: "Bible Study & Prayer", time: "7:00 PM" },
 ];
 
-export const nursery = "A clean, safe nursery is open for children ages 3 and under at every Sunday service.";
+export const nursery = "A clean, safe nursery is open for children ages 3 and under on Sunday mornings.";
 
 /** The people on the old site's Our Leadership page. */
 export const pastor = {
@@ -119,17 +119,23 @@ export const streams: Stream[] = [
   { id: "m0gaATXhBoU", title: "Sober", date: "2026-06-28", who: "Pastor Samson Ryman" },
 ];
 
-/** "What's The Big Deal About the KJV?", the seven-part series on the old site. */
+/**
+ * "What's the Big Deal About the KJV?", Dr. Sam Gipp's seven-part series
+ * (youtube.com/@samgipp4210). Each id was checked against its YouTube title.
+ */
 export const kjvSeries: { id: string; episode: number }[] = [
-  { id: "69Tw4nsV0DA", episode: 1 },
-  { id: "AsX6uWacASQ", episode: 2 },
-  { id: "FaHALxNg_1E", episode: 3 },
-  { id: "WgLCavjHwvI", episode: 4 },
-  { id: "bSiRzrSdqEo", episode: 5 },
-  { id: "eWLs3mSQfro", episode: 6 },
-  { id: "fAIFFmkLj0w", episode: 7 },
+  { id: "uf1C7sEIlLI", episode: 1 },
+  { id: "69Tw4nsV0DA", episode: 2 },
+  { id: "eWLs3mSQfro", episode: 3 },
+  { id: "fAIFFmkLj0w", episode: 4 },
+  { id: "WgLCavjHwvI", episode: 5 },
+  { id: "AsX6uWacASQ", episode: 6 },
+  { id: "bSiRzrSdqEo", episode: 7 },
   // uf1C7sEIlLI was also embedded on the old KJV page without a title.
 ];
+
+/** Another KJV video the church shares, not part of Brother Gipp's series. */
+export const kjvExtra = { id: "FaHALxNg_1E", title: "VERSES, Pilot: KJV vs. NKJV", from: "KJV Pictures" };
 
 /** The videos embedded on the old Free Gift page. */
 export const gospelVideos: string[] = ["9Zv7YLi5P-g", "RqXi4pGVvbU", "SCYgGOKGPEo", "TCSUKIhjevo", "z6FGCEpXlb8"];

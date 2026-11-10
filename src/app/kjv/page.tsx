@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PlainHead } from "@/components/PageHead";
 import YouTube from "@/components/YouTube";
-import { kjvSeries } from "@/lib/site";
+import { kjvExtra, kjvSeries } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "What’s the Big Deal About the KJV?",
-  description: "A seven-part video series from Kingsway Baptist Church on why we hold the King James Bible to be the preserved Word of God for English-speaking people.",
+  description: "Brother Sam Gipp’s seven-part video series on why Kingsway Baptist Church holds the King James Bible to be the preserved Word of God for English-speaking people.",
 };
 
 export default function KJV() {
@@ -15,7 +15,7 @@ export default function KJV() {
       <PlainHead
         kicker="The King James Bible"
         title="What’s the big deal about the KJV?"
-        intro="A seven-part series from our pastor on why the King James Bible is the only version accepted and used in the ministries of this church."
+        intro="Brother Sam Gipp’s seven-part series on why the King James Bible is the only version accepted and used in the ministries of this church."
       />
       <section className="bg-paper">
         <div className="mx-auto max-w-7xl px-4 pb-20 pt-14 lg:pt-20 sm:px-6 lg:px-8">
@@ -31,6 +31,16 @@ export default function KJV() {
                 <YouTube id={v.id} title={`What’s the Big Deal About the KJV? Episode ${v.episode}`} />
               </div>
             ))}
+          </div>
+          <div className="mt-16 border-t border-line pt-12 lg:grid lg:grid-cols-3 lg:gap-6">
+            <div className="lg:pr-6" data-reveal>
+              <p className="caps text-orange">One more to watch</p>
+              <h2 className="display-light mt-2 text-3xl text-ink">KJV vs. NKJV</h2>
+              <p className="mt-3 text-ink-soft">The pilot episode of VERSES from {kjvExtra.from}. It isn’t part of Brother Gipp’s series.</p>
+            </div>
+            <div className="mt-6 lg:mt-0" data-reveal="1">
+              <YouTube id={kjvExtra.id} title={kjvExtra.title} />
+            </div>
           </div>
           <div className="mt-12 flex flex-wrap gap-3">
             <Link href="/beliefs" className="btn btn-line-ink">

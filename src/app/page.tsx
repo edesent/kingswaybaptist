@@ -14,7 +14,7 @@ const sunday = [
   { src: "/photos/congregation-singing.jpg", alt: "The congregation standing to sing, hands raised" },
   { src: "/photos/bible-hands.jpg", alt: "An open Bible held in two hands during the service" },
   { src: "/photos/singers-instruments.jpg", alt: "A group singing special music with guitar and mandolin" },
-  { src: "/photos/greeting.jpg", alt: "Men greeting each other in the aisle after the service" },
+  { src: "/photos/greeting-elder.jpg", alt: "A warm handshake in the aisle after the service" },
 ];
 
 const life = [
@@ -248,7 +248,7 @@ export default function Home() {
               <p className="caps text-orange">Life at Kingsway</p>
               <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)] text-ink">Church family, not church attendance.</h2>
               <p className="lede mt-5 max-w-xl text-ink-soft">
-                Pumpkin patch outings, hayrides, Cowboy Sunday with hot dogs after church, dinners under the tent, games on the back field. We’re just regular people who like being together.
+                Pumpkin patch outings, hayrides, Cowboy Sunday with hot dogs after church, dinners on the grounds, games on the back field. We’re just regular people who like being together.
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <Clip src="/video/reel-oct27.mp4" poster="/posters/reel-oct27-poster.jpg" title="A Sunday at Kingsway: greeting in the foyer, singing, and a birthday" caption="A Sunday in October" />

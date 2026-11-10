@@ -12,7 +12,14 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-const year = [
+const year: { when: string; t: string; b: string; src: string; alt: string; pos?: string }[] = [
+  {
+    when: "February",
+    t: "Sweetheart Banquet",
+    b: "An evening for husbands and wives: dinner together under the string lights.",
+    src: "/photos/tent-dinner.jpg",
+    alt: "Couples at dinner tables under string lights at the Sweetheart Banquet",
+  },
   {
     when: "Summer",
     t: "American Bible Giveaway",
@@ -37,9 +44,10 @@ const year = [
   {
     when: "Any Sunday",
     t: "Dinner on the grounds",
-    b: "Dinners under the tent, games on the back field, birthdays celebrated after the service. Church family, not church attendance.",
-    src: "/photos/tent-dinner.jpg",
-    alt: "A dinner under a lit tent on the church grounds",
+    b: "Dinners outside on the grounds or downstairs in the church basement. Church family, not church attendance.",
+    src: "/photos/lady-cupcake.jpg",
+    alt: "A church lady with a cupcake at a dinner in the church basement",
+    pos: "center 30%",
   },
 ];
 
@@ -124,11 +132,11 @@ export default function Events() {
           <h2 className="display mt-3 max-w-3xl text-[clamp(2.2rem,4.5vw,3.8rem)] text-ink" data-reveal>
             The things we do together.
           </h2>
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {year.map((y, i) => (
               <div key={y.t} data-reveal={String(i)}>
                 <div className="relative aspect-[4/3] overflow-hidden bg-sand">
-                  <Image src={y.src} alt={y.alt} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+                  <Image src={y.src} alt={y.alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" style={y.pos ? { objectPosition: y.pos } : undefined} />
                 </div>
                 <p className="caps mt-4 !text-[0.62rem] text-orange">{y.when}</p>
                 <h3 className="display-light mt-1 text-2xl text-ink">{y.t}</h3>
@@ -143,7 +151,7 @@ export default function Events() {
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6 lg:px-8">
           <div>
             <p className="caps text-orange">Church Center app</p>
-            <p className="display-light mt-2 text-3xl text-ink">Events, small groups and giving, in your pocket.</p>
+            <p className="display-light mt-2 text-3xl text-ink">Events and giving, in your pocket.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <a href={giving.churchCenterIos} target="_blank" rel="noopener" className="btn btn-line-ink">

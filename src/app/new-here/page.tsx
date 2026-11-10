@@ -19,8 +19,8 @@ export default function NewHere() {
         kicker="New here?"
         title="Come as you are and let God work on you."
         intro="We understand that visiting a church can be intimidating, but we want everyone to feel welcome and at home."
-        photo="/photos/greeting.jpg"
-        alt="Men greeting one another in the aisle at Kingsway"
+        photo="/photos/greeting-elder.jpg"
+        alt="A warm handshake between two men in the aisle at Kingsway"
         position="center 30%"
       />
 
@@ -96,7 +96,7 @@ export default function NewHere() {
               },
               {
                 t: "A nursery and a discipleship program",
-                b: "A clean, safe nursery for ages 3 and under. For new believers, a discipleship program to get grounded in God’s Word.",
+                b: "A clean, safe nursery for ages 3 and under on Sunday mornings. For new believers, a discipleship program to get grounded in God’s Word.",
                 src: "/photos/kids-crafts.jpg",
                 alt: "Children working on crafts",
               },

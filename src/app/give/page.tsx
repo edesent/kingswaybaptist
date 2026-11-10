@@ -39,7 +39,7 @@ export default function Give() {
                 <p className="caps !text-[0.62rem] text-orange">Church Center app</p>
                 <p className="display-light mt-2 text-3xl">In the app</p>
                 <p className="mt-2 text-sm text-ink-soft">
-                  Give, and see events and small groups.{" "}
+                  Give, and see events.{" "}
                   <a href={giving.churchCenterIos} target="_blank" rel="noopener" className="font-semibold text-orange underline-offset-4 hover:underline">
                     iOS
                   </a>{" "}

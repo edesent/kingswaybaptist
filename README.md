@@ -63,7 +63,8 @@ answer honestly that the form isn't connected yet and ask people to call.
 ## Confirm with the church
 
 - **Nursery age.** The old site says birth to 3 years; the Facebook intro says 4 and under. The site says
-  "ages 3 and under".
+  "ages 3 and under". Israel confirmed on 2026-11-10 that the nursery is Sunday mornings only (Sunday School and
+  the morning service), and that the church has no small groups.
 - **Stream times.** The old Media page says streams start at approximately 11:30 AM and 6:30 PM. Confirm the
   evening stream still runs (recent evening streams are rarer on the channel than morning ones).
 - **Audio sermons.** The old site had a podcast page (audio of every sermon) hosted on Ministry Designs. If
