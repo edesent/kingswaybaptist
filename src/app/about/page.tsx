@@ -145,7 +145,7 @@ export default function About() {
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-4 py-14 sm:px-6 lg:px-8">
           <div>
             <p className="caps text-orange">What we believe</p>
-            <p className="display-light mt-2 text-3xl text-ink">The King James Bible, salvation by grace, and a New Testament church.</p>
+            <p className="display-light mt-2 text-3xl text-ink">The King James Bible, Salvation by Grace, and a New Testament church.</p>
           </div>
           <Link href="/beliefs" className="btn btn-ink">
             Our statement of faith
