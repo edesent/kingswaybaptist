@@ -191,7 +191,7 @@ export const events: SpecialEvent[] = [
     startsAt: "2026-11-29T18:00:00-05:00",
     endsOn: "2026-11-29",
     day: "Sunday",
-    time: "6:00 PM · Evening service",
+    time: "6:00 PM · Evening Service",
     where: "",
     summary: "",
   },
