@@ -29,7 +29,7 @@ const life = [
 ];
 
 export default function Home() {
-  const events = upcomingEvents();
+  const events = upcomingEvents().slice(0, 4);
   const latest = streams[0];
 
   return (
