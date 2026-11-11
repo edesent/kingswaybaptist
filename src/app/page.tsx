@@ -14,7 +14,7 @@ const sunday = [
   { src: "/photos/congregation-singing.jpg", alt: "The congregation standing to sing, hands raised" },
   { src: "/photos/bible-hands.jpg", alt: "An open Bible held in two hands during the service" },
   { src: "/photos/singers-instruments.jpg", alt: "A group singing special music with guitar and mandolin" },
-  { src: "/photos/greeting-elder.jpg", alt: "A warm handshake in the aisle after the service" },
+  { src: "/photos/screenshot-2026-11-11-at-1-08-53-pm.png", alt: "A warm handshake at the church doors on Sunday morning" },
 ];
 
 const life = [
