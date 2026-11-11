@@ -19,8 +19,8 @@ export default function NewHere() {
         kicker="New here?"
         title="Come as you are and let God work on you."
         intro="We understand that visiting a church can be intimidating, but we want everyone to feel welcome and at home."
-        photo="/photos/greeting-elder.jpg"
-        alt="A warm handshake between two men in the aisle at Kingsway"
+        photo="/photos/screenshot-2026-11-11-at-1-08-53-pm.png"
+        alt="A warm handshake between two men at the church doors at Kingsway"
         position="center 30%"
       />
 
