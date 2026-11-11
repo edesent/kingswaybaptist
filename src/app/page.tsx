@@ -310,9 +310,9 @@ export default function Home() {
                     <div>
                       <h3 className="display-light text-3xl text-ink">{e.title}</h3>
                       <p className="mt-1 text-sm text-muted">
-                        {e.day} · {e.time} · {e.where}
+                        {[e.day, e.time, e.where].filter(Boolean).join(" · ")}
                       </p>
-                      <p className="mt-3 text-[0.98rem] text-ink-soft">{e.summary}</p>
+                      {e.summary && <p className="mt-3 text-[0.98rem] text-ink-soft">{e.summary}</p>}
                     </div>
                   </article>
                 );
