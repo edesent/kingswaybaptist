@@ -88,7 +88,7 @@ export default function Home() {
               Our sincere prayer is that through this website you’ll be inspired to visit us in person. In the meantime, take some time to get to know us a bit. Above all, we pray that you’ll come to know our Lord and Savior, Jesus Christ.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 sm:grid-cols-3 lg:col-span-5 lg:mt-0 lg:grid-cols-1 lg:border-l lg:border-line lg:pl-12" data-reveal="1">
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:col-span-5 lg:mt-0 lg:grid-cols-1 lg:border-l lg:border-line lg:pl-12" data-reveal="1">
             {[
               ["King James Bible", "We preach and teach from the AV 1611 King James Bible, which we hold to be the perfect, preserved Word of God."],
               ["Hymns & spiritual songs", "We express our devotion to the Lord the old way, with hymnbooks in the pews and special music from our own families."],
