@@ -104,7 +104,7 @@ export default function NewHere() {
             ].map((c, i) => (
               <div key={c.t} data-reveal={String(i)}>
                 <div className="relative aspect-[4/3] overflow-hidden bg-sand">
-                  <Image src={c.src} alt={c.alt} fill sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="object-cover" />
+                  <Image src={c.src} alt={c.alt} fill sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="object-cover" style={c.pos ? { objectPosition: c.pos } : undefined} />
                 </div>
                 <h3 className="display-light mt-5 text-2xl text-ink">{c.t}</h3>
                 <p className="mt-2 text-[0.95rem] text-ink-soft">{c.b}</p>
