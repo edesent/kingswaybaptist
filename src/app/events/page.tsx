@@ -72,9 +72,9 @@ export default function Events() {
                     <div>
                       <h2 className="display-light text-3xl text-ink">{e.title}</h2>
                       <p className="mt-1 text-sm text-muted">
-                        {e.day} · {e.time} · {e.where}
+                        {[e.day, e.time, e.where].filter(Boolean).join(" · ")}
                       </p>
-                      <p className="mt-3 text-ink-soft">{e.summary}</p>
+                      {e.summary && <p className="mt-3 text-ink-soft">{e.summary}</p>}
                       {e.items && (
                         <ul className="mt-3 list-disc pl-5 text-[0.95rem] text-ink-soft">
                           {e.items.map((it) => (
