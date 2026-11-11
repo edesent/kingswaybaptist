@@ -38,8 +38,8 @@ const year: { when: string; t: string; b: string; src: string; alt: string; pos?
     when: "November",
     t: "Cowboy Sunday",
     b: "Dress up in western wear, hear the Word preached, and stay for hot dogs after church. Wrangling hearts for Jesus.",
-    src: "/photos/kingsway-hat.jpg",
-    alt: "A white Kingsway Baptist Church cap, Mickleton NJ, on a pew",
+    src: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/GtGAjmuzwo56I0CqT6CfQcITFU6i8iBj/IMG_1841-yDvDL8L9mStj2bMshyui8lLuPaANAg.jpeg",
+    alt: "The platform decorated for Cowboy Sunday with saddles, a rope, boots full of fall flowers, and an open Bible",
   },
   {
     when: "Any Sunday",
