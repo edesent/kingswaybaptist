@@ -11,7 +11,11 @@ const nextConfig: NextConfig = {
   skipTrailingSlashRedirect: true,
   images: {
     // YouTube thumbnails for the stream list and the click-to-play embeds.
-    remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "i.ytimg.com" },
+      // Larger photos uploaded through the website editor.
+      { protocol: "https", hostname: "*.public.blob.vercel-storage.com" },
+    ],
   },
   async headers() {
     // Only kbc4u.org is indexed. The elijahdesent.com preview and *.vercel.app
