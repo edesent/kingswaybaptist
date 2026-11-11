@@ -45,9 +45,9 @@ const year: { when: string; t: string; b: string; src: string; alt: string; pos?
     when: "Any Sunday",
     t: "Dinner on the grounds",
     b: "Dinners outside on the grounds or downstairs in the church basement. Church family, not church attendance.",
-    src: "/photos/lady-cupcake.jpg",
-    alt: "A church lady with a cupcake at a dinner in the church basement",
-    pos: "center 30%",
+    src: "/photos/img-5794.jpeg",
+    alt: "Church family going through the buffet line at a dinner in the church basement",
+    pos: "center 55%",
   },
 ];
 
