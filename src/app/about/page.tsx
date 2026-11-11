@@ -122,7 +122,19 @@ export default function About() {
               </p>
               <h3 className="display-light mt-10 text-3xl text-ink">Israel, Isabel, Juliet and Grace</h3>
               <p className="text-ink-soft">
-                The Ryman children have sung special music, run the sound system, cleaned the church, decorated, set up for events and camps, and cooked and served at them. Israel served ten years as song leader, preaches whenever possible, plays the guitar, and has taught Sunday School. Isabel, Juliet, and Grace have helped in the nursery and play piano, violin, and mandolin.
+                The Ryman children have been actively involved in the ministry of the church from a young age and continue to faithfully serve alongside their parents today. Over the years, they have served in countless ways, including singing special music, helping with the sound system, teaching, serving in the nursery, cleaning and decorating the church, planning and preparing for events and camps, and cooking and serving meals. Each has developed a heart for serving the Lord and being a blessing to others.
+              </p>
+              <p className="text-ink-soft">
+                <strong>Israel</strong> plays a significant role in the ministry of the church, serving alongside Pastor Ryman in many areas. He teaches the youth, organizes and leads youth activities, leads congregational singing, sings special music, and assists with ordering tracts and other ministry needs. He also helps with many of the behind-the-scenes responsibilities of the church and works closely with the pastor in various aspects of the ministry.
+              </p>
+              <p className="text-ink-soft">
+                <strong>Isabel</strong> serves as the church pianist, sings special music, helps in the nursery, assists with event planning, and faithfully helps with church cleaning and maintaining the coffee bar, along with many other responsibilities.
+              </p>
+              <p className="text-ink-soft">
+                <strong>Juliet</strong> plays the violin, sings special music, serves in the nursery, assists with event planning, sound and video, and helps with church cleaning and maintaining the coffee bar, along with other areas of ministry.
+              </p>
+              <p className="text-ink-soft">
+                <strong>Grace</strong> plays the mandolin, sings special music, serves in the nursery, assists with event planning, sound and video and helps with church cleaning and maintaining the coffee bar, along with other areas of ministry.
               </p>
               <p className="text-ink-soft">
                 Pastor and Mrs. Ryman graduated from Bible college in 2001. Their family’s shared passion is to see people accept Jesus Christ as their personal Savior and grow in their faith daily through believing, understanding, and applying God’s Word.
