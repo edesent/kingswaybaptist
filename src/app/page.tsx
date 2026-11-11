@@ -274,7 +274,7 @@ export default function Home() {
             </Link>
             <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)] text-ink">Bad weather? Out of town? Too sick to come?</h2>
             <p className="lede mt-5 max-w-xl text-ink-soft">
-              Jump on our live stream and be part of the service from wherever you are. Both Sunday services go out on YouTube, morning around 11:30 and evening around 6:30, and every one stays up afterward.
+              Jump on our live stream and be part of the service from wherever you are. Both Sunday services go out on YouTube, morning around 11 and evening around 6:30, and every one stays up afterward.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/watch" className="btn btn-ink">
