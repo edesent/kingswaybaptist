@@ -62,7 +62,7 @@ export const giving = {
 /** The weekly rhythm, from the old site's home page. */
 export const schedule: { day: string; name: string; time: string; note?: string }[] = [
   { day: "Sunday", name: "Sunday School", time: "10:00 AM" },
-  { day: "Sunday", name: "Morning Service", time: "11:00 AM", note: "Streamed on YouTube around 11:30" },
+  { day: "Sunday", name: "Morning Service", time: "11:00 AM", note: "Streamed on YouTube around 11" },
   { day: "Sunday", name: "Evening Service", time: "6:00 PM", note: "Streamed on YouTube around 6:30" },
   { day: "Wednesday", name: "Bible Study & Prayer", time: "7:00 PM" },
 ];
