@@ -92,7 +92,7 @@ export default function NewHere() {
                 t: "Straight, practical preaching",
                 b: "Sound biblical preaching from the King James Bible, with practical application to your daily life. Bring your Bible, or use one from the pew.",
                 src: "/photos/img-6236.jpeg",
-                alt: "Pastor Ryman preaching from the pulpit at Kingsway under the Christ Our Hope banner",
+                alt: "A man preaching from the pulpit at Kingsway under the Christ Our Hope banner",
                 pos: "center 28%",
               },
               {
