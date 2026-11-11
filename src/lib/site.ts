@@ -164,7 +164,78 @@ export type SpecialEvent = {
   items?: string[];
 };
 
-export const events: SpecialEvent[] = [];
+export const events: SpecialEvent[] = [
+  {
+    id: "pie-and-praise-2026",
+    title: "Pie and Praise Service",
+    startsAt: "2026-11-24T12:00:00-05:00",
+    endsOn: "2026-11-24",
+    day: "Tuesday",
+    time: "",
+    where: "",
+    summary: "",
+  },
+  {
+    id: "no-midweek-2026-11-25",
+    title: "No Midweek Service",
+    startsAt: "2026-11-25T12:00:00-05:00",
+    endsOn: "2026-11-25",
+    day: "Wednesday",
+    time: "",
+    where: "",
+    summary: "There is no Bible Study & Prayer service this Wednesday.",
+  },
+  {
+    id: "lords-supper-2026-11-29",
+    title: "The Lord’s Supper",
+    startsAt: "2026-11-29T18:00:00-05:00",
+    endsOn: "2026-11-29",
+    day: "Sunday",
+    time: "Evening service",
+    where: "",
+    summary: "",
+  },
+  {
+    id: "christmas-carol-2026-12-11",
+    title: "Christmas Carol Nursing Home / Christmas Party",
+    startsAt: "2026-12-11T12:00:00-05:00",
+    endsOn: "2026-12-11",
+    day: "Friday",
+    time: "",
+    where: "",
+    summary: "",
+  },
+  {
+    id: "candlelight-2026-12-20",
+    title: "Candlelight Service",
+    startsAt: "2026-12-20T12:00:00-05:00",
+    endsOn: "2026-12-20",
+    day: "Sunday",
+    time: "",
+    where: "",
+    summary: "",
+  },
+  {
+    id: "no-midweek-2026-12-23",
+    title: "No Midweek Service",
+    startsAt: "2026-12-23T12:00:00-05:00",
+    endsOn: "2026-12-23",
+    day: "Wednesday",
+    time: "",
+    where: "",
+    summary: "There is no Bible Study & Prayer service this Wednesday.",
+  },
+  {
+    id: "omni-night-2026-12-28",
+    title: "Omni Night",
+    startsAt: "2026-12-28T12:00:00-05:00",
+    endsOn: "2026-12-28",
+    day: "Monday",
+    time: "",
+    where: "",
+    summary: "Hosted by Solid Rock Baptist Church. Info to come.",
+  },
+];
 
 /** Keep labels short: long labels wrap and break the header on phones. */
 export const nav: { href: string; label: string }[] = [
