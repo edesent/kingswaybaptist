@@ -90,7 +90,6 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-3 lg:col-span-5 lg:mt-0 lg:grid-cols-1 lg:border-l lg:border-line lg:pl-12" data-reveal="1">
             {[
-              ["Since 1975", "Planted by Pastor Jim Fish, who moved his family from Michigan to start a Bible-believing church in Gloucester County. Our first service was the Sunday after Thanksgiving."],
               ["King James Bible", "We preach and teach from the AV 1611 King James Bible, which we hold to be the perfect, preserved Word of God."],
               ["Hymns & spiritual songs", "We express our devotion to the Lord the old way, with hymnbooks in the pews and special music from our own families."],
             ].map(([t, b]) => (
