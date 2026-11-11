@@ -137,10 +137,6 @@ export default function About() {
                 <p className="mt-1 text-[0.95rem] text-ink-soft">{l.role}</p>
               </div>
             ))}
-            <div className="border-l-2 border-line pl-5" data-reveal="2">
-              <h3 className="display-light text-3xl text-ink">Pastor Jim Fish</h3>
-              <p className="mt-1 text-[0.95rem] text-ink-soft">Founding pastor, 1975–2015</p>
-            </div>
           </div>
         </div>
       </section>
