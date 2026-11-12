@@ -119,10 +119,7 @@ export default function About() {
               <div className="relative mt-10 aspect-[2/1] overflow-hidden bg-sand">
                 <Image src="/photos/c91ef4bc-3f02-4040-8ba7-320d7efda667.png" alt="Six smiling people leaning together in a church pew" fill sizes="(min-width: 1024px) 55vw, 100vw" className="object-cover" />
               </div>
-              <h3 className="display-light mt-10 text-3xl text-ink">Mrs. Linnet Ryman</h3>
-              <p className="text-ink-soft">
-                With a deep passion for children’s and women’s ministry, Mrs. Ryman has dedicated her life to serving others. Over the past 25 years she has taught Sunday school to elementary children and teen girls, led ladies’ Bible classes, and planned and run numerous large ladies’ events. She has also served in the church’s media, food services, decorating, and as church secretary, and she holds a certificate in biblical counseling.
-              </p>
+
               <h3 className="display-light mt-10 text-3xl text-ink">Israel, Isabel, Juliet and Grace</h3>
               <p className="text-ink-soft">
                 The Ryman children have been actively involved in the ministry of the church from a young age and continue to faithfully serve alongside their parents today. Over the years, they have served in countless ways, including singing special music, helping with the sound system, teaching, serving in the nursery, cleaning and decorating the church, planning and preparing for events and camps, and cooking and serving meals. Each has developed a heart for serving the Lord and being a blessing to others.
