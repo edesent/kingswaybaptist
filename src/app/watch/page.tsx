@@ -17,7 +17,7 @@ export default function Watch() {
     <>
       <PageHead
         kicker="Watch"
-        title="Every service, live and after."
+        title="The 11 AM service, live and after."
         intro="Kingsway streams the 11 AM Sunday morning service to YouTube. Catch up on anything you missed, or share a message with family and friends."
         photo="/photos/pastor-ryman-israel.jpg"
         alt="Pastor Ryman and his son Israel at the pulpit with microphones during a Sunday stream"
