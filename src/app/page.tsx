@@ -229,9 +229,15 @@ export default function Home() {
           <div className="road-light mt-12 max-w-md" />
           <div className="mt-12 grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-6" data-reveal>
-              <div className="relative aspect-[4/3] overflow-hidden bg-dusk-900">
-                <Image src="/photos/img-2255.jpg" alt="The Kingsway roadside sign advertising free flag Bibles, with young people holding Free Bible signs along the Kings Highway" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
-              </div>
+              <Clip
+                src="/video/highway-bible-giveaway.mp4"
+                poster="/photos/img-2255.jpg"
+                title="The free Bible giveaway along the Kings Highway"
+                caption="Free Bible Giveaway Day"
+                vertical={false}
+                aspect="aspect-[4/3]"
+                className="text-white [&_figcaption]:text-white/60"
+              />
             </div>
             <div className="lg:col-span-6" data-reveal="1">
               <h3 className="display-light text-3xl sm:text-4xl">Out on the highway, every summer.</h3>
