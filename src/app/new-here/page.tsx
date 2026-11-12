@@ -84,7 +84,7 @@ export default function NewHere() {
               },
               {
                 t: "Singing from the hymnbook",
-                b: "We express our devotion to the Lord through hymns and spiritual songs, with the piano, guitars, violin and mandolin from our own families.",
+                b: "We express our devotion to the Lord through hymns and spiritual songs.",
                 src: "/photos/img-8133.jpeg",
                 alt: "Four young people singing and playing guitar and mandolin on the platform",
               },
