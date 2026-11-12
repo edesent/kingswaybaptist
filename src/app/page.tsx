@@ -229,12 +229,6 @@ export default function Home() {
           <div className="road-light mt-12 max-w-md" />
           <div className="mt-12 grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-6" data-reveal>
-              <Clip
-                src="/video/bible-giveaway-day.mp4"
-                poster="/posters/bible-giveaway-day-poster.jpg"
-                title="Our church family handing out free King James Bibles along the Kings Highway"
-                vertical={false}
-              />
             </div>
             <div className="lg:col-span-6" data-reveal="1">
               <h3 className="display-light text-3xl sm:text-4xl">Out on the highway, every summer.</h3>
