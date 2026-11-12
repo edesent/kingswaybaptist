@@ -32,6 +32,10 @@ const life = [
   { src: "/photos/life/img-8903.jpg", alt: "A couple enjoying ice cream together on a summer evening" },
   { src: "/photos/life/img-8868.jpg", alt: "Young people gathered around the piano on the platform" },
   { src: "/photos/life/img-2064.jpg", alt: "A family of five smiling in front of the church building" },
+  { src: "/photos/life/img-5963.jpg", alt: "A toddler riding an inflatable bull with help from a man in a cowboy vest, while a boy in a red bandana looks on" },
+  { src: "/photos/life/img-9795.jpg", alt: "A group of young people and a man smiling together on a driveway" },
+  { src: "/photos/life/img-8877.jpg", alt: "A group of young men standing together and smiling at a restaurant" },
+  { src: "/photos/life/fullsizerender.jpg", alt: "Four young men relaxing on hay bales at the pumpkin patch" },
 ];
 
 export default function Home() {
