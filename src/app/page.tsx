@@ -261,7 +261,7 @@ export default function Home() {
               <p className="caps text-orange">Life at Kingsway</p>
               <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)] text-ink">Growing together in Christ. Serving together as family.</h2>
               <p className="lede mt-5 max-w-xl text-ink-soft">
-                Pumpkin patch outings, hayrides, Cowboy Sunday with hot dogs after church, dinners on the grounds, games on the back field. We’re just regular people who like being together.
+                At Kingsway, we’re more than people who gather together on Sundays. We’re a church family growing in the Lord together. We love studying God’s Word, receiving Bible preaching, worshipping, singing praises, and praying together. And we enjoy spending time together outside the church walls, too! From pumpkin patch outings and hayrides to Cowboy Sunday, dinners on the grounds, and games on the back field, there’s always an opportunity to laugh, fellowship, and make memories. We’re just regular people who love the Lord and love being together!
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <Clip src="/video/reel-oct27.mp4" poster="/posters/reel-oct27-poster.jpg" title="A Sunday at Kingsway: greeting in the foyer, singing, and a birthday" caption="A Sunday in October" />
