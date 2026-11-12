@@ -84,6 +84,7 @@ export const pastor = {
 export const leaders: { name: string; role: string }[] = [
   { name: "Phil Wood", role: "Deacon, Bible Teacher, Preacher" },
   { name: "Paul Mitchell", role: "Trustee, Treasurer, Head of Prayer Ministry" },
+  { name: "Israel Ryman", role: "Youth Ministry and Worship Leader" },
 ];
 
 /** The year's theme, from the screens in the sanctuary. */
