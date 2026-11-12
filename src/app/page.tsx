@@ -269,8 +269,8 @@ export default function Home() {
             </div>
             <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:col-span-7 lg:mt-0 lg:grid-cols-3">
               {life.map((p, i) => (
-                <div key={p.src} className={`relative overflow-hidden bg-sand ${i % 5 === 0 ? "aspect-[3/4] sm:row-span-2 sm:aspect-auto" : "aspect-square"}`} data-reveal={String(i % 3)}>
-                  <Image src={p.src} alt={p.alt} fill sizes="(min-width: 1024px) 20vw, 50vw" className="object-cover" />
+                <div key={p.src} className={`relative overflow-hidden bg-sand ${p.src === "/photos/life/img-9795.jpg" ? "col-span-2 aspect-[4/3]" : i % 5 === 0 ? "aspect-[3/4] sm:row-span-2 sm:aspect-auto" : "aspect-square"}`} data-reveal={String(i % 3)}>
+                  <Image src={p.src} alt={p.alt} fill sizes={p.src === "/photos/life/img-9795.jpg" ? "(min-width: 1024px) 40vw, 100vw" : "(min-width: 1024px) 20vw, 50vw"} className="object-cover" />
                 </div>
               ))}
             </div>
