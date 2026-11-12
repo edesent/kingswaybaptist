@@ -97,7 +97,7 @@ export default function NewHere() {
               },
               {
                 t: "Nursery",
-                b: "A clean, safe nursery for ages 3 and under on Sunday mornings. For new believers, a discipleship program to get grounded in God’s Word.",
+                b: "A clean, safe nursery for ages 3 and under on Sunday mornings.",
                 src: "/photos/kids-crafts.jpg",
                 alt: "Children working on crafts",
               },
