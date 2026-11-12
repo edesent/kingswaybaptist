@@ -96,7 +96,7 @@ export default function NewHere() {
                 pos: "center 28%",
               },
               {
-                t: "A nursery and a discipleship program",
+                t: "Nursery",
                 b: "A clean, safe nursery for ages 3 and under on Sunday mornings. For new believers, a discipleship program to get grounded in God’s Word.",
                 src: "/photos/kids-crafts.jpg",
                 alt: "Children working on crafts",
