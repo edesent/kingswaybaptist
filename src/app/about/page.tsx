@@ -114,7 +114,7 @@ export default function About() {
                 Pastor Ryman, deeply passionate about teaching men to grow biblically and spiritually, finds his life verse in II Timothy 2:2-4. With a genuine concern for teens, he possesses a unique ability to connect with them. Pastor Ryman manages two family and youth camps, one in West Chazy, New York, and the other in San Antonio, Texas, and he preaches at youth rallies.
               </p>
               <p className="text-ink-soft">
-                Pastor Ryman and his wife, Linnet Ryman, have been married since 1997 and have been blessed with four grown children: Israel, Isabel, Juliet, and Grace.
+                Pastor Samson and his wife, Linnet Ryman, have been married since 1997 and are blessed with four grown children: Israel, Isabel, Juliet, and Grace. Together, they graduated from Bible college in 2001. The Rymans are a ministry-minded family who share in the work of the ministry, serving and working alongside one another in the many areas of church life. Their shared passion is to see people come to know Jesus Christ as their personal Savior and grow in their faith through believing, understanding, and applying God’s Word to their daily lives.
               </p>
               <div className="relative mt-10 aspect-[2/1] overflow-hidden bg-sand">
                 <Image src="/photos/c91ef4bc-3f02-4040-8ba7-320d7efda667.png" alt="Six smiling people leaning together in a church pew" fill sizes="(min-width: 1024px) 55vw, 100vw" className="object-cover" />
