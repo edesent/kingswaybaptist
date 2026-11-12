@@ -32,7 +32,6 @@ const life = [
   { src: "/photos/life/img-8903.jpg", alt: "A couple enjoying ice cream together on a summer evening" },
   { src: "/photos/life/img-8868.jpg", alt: "Young people gathered around the piano on the platform" },
   { src: "/photos/life/img-2064.jpg", alt: "A family of five smiling in front of the church building" },
-  { src: "/photos/life/img-0341.jpg", alt: "Church members sitting together on a hayride with a pumpkin" },
 ];
 
 export default function Home() {
