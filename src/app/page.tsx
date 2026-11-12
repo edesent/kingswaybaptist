@@ -259,7 +259,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-5" data-reveal>
               <p className="caps text-orange">Life at Kingsway</p>
-              <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)] text-ink">Church family, not church attendance.</h2>
+              <h2 className="display mt-3 text-[clamp(2.4rem,5vw,4.4rem)] text-ink">Growing together in Christ. Serving together as family.</h2>
               <p className="lede mt-5 max-w-xl text-ink-soft">
                 Pumpkin patch outings, hayrides, Cowboy Sunday with hot dogs after church, dinners on the grounds, games on the back field. We’re just regular people who like being together.
               </p>
