@@ -240,7 +240,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:col-span-6" data-reveal="1">
-              <h3 className="display-light text-3xl sm:text-4xl">Out on the highway, every summer.</h3>
+              <h3 className="display-light text-3xl sm:text-4xl">Out on the highway.</h3>
               <p className="mt-4 max-w-xl text-white/80">
                 Each year our church family sets up along the Kings Highway and gives away free King James Bibles to anyone who stops. In 2026 we marked America’s 250th with flag Bibles and signs held high by our own young people. That is the highways and hedges verse, lived out at the end of our driveway.
               </p>
