@@ -25,7 +25,14 @@ const life = [
   { src: "/photos/life/red-wagon.jpg", alt: "The red tractor wagon at the farm" },
   { src: "/photos/life/archery.jpg", alt: "A little girl trying archery at the fall outing" },
   { src: "/photos/kids-crafts.jpg", alt: "Children working on crafts at a table" },
-  { src: "/photos/field-games.jpg", alt: "The church playing games on the field behind the building" },
+  { src: "/photos/life/img-1865.jpg", alt: "Church family eating together at picnic tables under the Chow Time tent on Cowboy Sunday" },
+  { src: "/photos/life/img-1206.jpg", alt: "Four smiling ladies in cowboy hats on a sunny fall day" },
+  { src: "/photos/life/img-1216.jpg", alt: "A boy giving a toddler in pink sunglasses a hug on the back field" },
+  { src: "/photos/life/img-1974.jpg", alt: "A woman making a giant bubble with a wand at a fall outing" },
+  { src: "/photos/life/img-8903.jpg", alt: "A couple enjoying ice cream together on a summer evening" },
+  { src: "/photos/life/img-8868.jpg", alt: "Young people gathered around the piano on the platform" },
+  { src: "/photos/life/img-2064.jpg", alt: "A family of five smiling in front of the church building" },
+  { src: "/photos/life/img-0341.jpg", alt: "Church members sitting together on a hayride with a pumpkin" },
 ];
 
 export default function Home() {
