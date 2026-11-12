@@ -35,7 +35,7 @@ const poppins = localFont({
   display: "swap",
 });
 
-const description = `${church.name} is an independent Baptist church on the Kings Highway in Mickleton, New Jersey, since 1975. King James Bible, hymns, Sunday School 10 AM, services 11 AM and 6 PM, Wednesday Bible study 7 PM. Pastor Samson Ryman. Every service streams on YouTube.`;
+const description = `${church.name} is an independent Baptist church on the Kings Highway in Mickleton, New Jersey, since 1975. King James Bible, hymns, Sunday School 10 AM, services 11 AM and 6 PM, Wednesday Bible study 7 PM. Pastor Samson Ryman. The 11 AM Sunday morning service streams on YouTube.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
