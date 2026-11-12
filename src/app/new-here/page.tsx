@@ -78,7 +78,7 @@ export default function NewHere() {
             {[
               {
                 t: "Sunday School",
-                b: "At 10 AM we split into classes for every age and dig into the Bible together. Morning service follows at 11, and we’re back at 6 for the evening service.",
+                b: "At 10 AM we dig into the Bible together. Morning service follows at 11 AM, and we’re back at 6PM for the evening service.",
                 src: "/photos/hymnbook.jpg",
                 alt: "Hands holding an open hymnbook",
               },
