@@ -97,7 +97,7 @@ export default function NewHere() {
               },
               {
                 t: "Nursery",
-                b: "A clean, safe nursery for ages 3 and under on Sunday mornings.",
+                b: "A clean, safe nursery for ages 3 and under on Sunday mornings. A nursing room is also available for nursing mothers.",
                 src: "/photos/nursery-room.jpg",
                 alt: "The nursery room with toys, a rocking horse and a changing table",
               },
